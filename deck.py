@@ -1,6 +1,7 @@
 import random
 from card import Card
 
+
 class Deck:
     def __init__(self):
         self.cards = []
@@ -8,7 +9,7 @@ class Deck:
     
     def deck(self):
         for suit in ["Clubs", "Spades", "Hearts", "Diamonds"]:
-            for char in range(1,14):
+            for char in range(1, 14):
                 self.cards.append(Card(suit, char))
         self.shuffle()
 
